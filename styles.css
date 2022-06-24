@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --primary-color: #3282b8;
@@ -13,10 +13,15 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   position: fixed;
   width: 100%;
   background-color: var(--primary-color-dark);
@@ -25,29 +30,25 @@ body {
 
 .menu {
   list-style: none;
-  margin: auto;
-  padding: 0;
-  overflow: hidden;
   color: var(--accent-color);
-  text-align: center;
 }
 
 .menu-item {
   display: inline-block;
   padding: 20px;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 .menu-item a:hover {
-  background-color: var(--accent-color);
-  color: var(--primary-color-dark);
+  color: var(--primary-color);
 }
 
 .menu-item a {
-  padding: 20px;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--accent-color);
   font-size: 18px;
+  font-weight: 800;
   letter-spacing: 2px;
   transition: all 1s;
 }
@@ -55,11 +56,10 @@ body {
 .logo {
   text-decoration: none;
   position: fixed;
-  float: left;
-  margin: 16px 36px;
+  padding-left: 1rem;
   color: var(--accent-color);
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .introduction {
@@ -105,7 +105,7 @@ body {
 h1 {
   margin: 100px 0 0 0;
   font-size: 60px;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--accent-color);
   text-transform: uppercase;
 }
@@ -204,8 +204,8 @@ form {
 
 footer {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: var(--primary-color-dark);
   color: var(--accent-color);
   padding: 20px;
@@ -220,4 +220,25 @@ footer {
   text-decoration: none;
   color: var(--accent-color);
   font-size: 18px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-raleway-900 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+.text-md {
+  font-size: 1.2rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
 }
